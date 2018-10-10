@@ -16,8 +16,6 @@ public class CyclicRotation {
 		int[] arr = {3, 8, 9, 7, 6};
 		
 		cyclicRotate(arr, 3);
-		
-		//IntStream.of(arr).forEach(b -> System.out.print(b+"-"));
 
 	}
 
