@@ -5,7 +5,6 @@ import java.util.stream.IntStream;
 public class CyclicRotation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		/*An array A consisting of N integers is given. Rotation of the array means
 		 *that each element is shifted right by one index, and the last element of 
@@ -63,10 +62,9 @@ public class CyclicRotation {
 			
 		}*/
 		
-		//Approach 2: Rotate the elements to the right by k
+		//Approach 2: Assign the elements to a new array shifting by k
 		
-		int[] newArr = new int[arr.length];
-		
+		int[] newArr = new int[arr.length];		
 		
 		
 		for(int m=0; m< arr.length; m++) {
