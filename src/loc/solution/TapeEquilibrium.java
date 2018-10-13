@@ -1,5 +1,7 @@
 package loc.solution;
 
+import java.util.stream.IntStream;
+
 public class TapeEquilibrium {
 
 	public static void main(String[] args) {
@@ -13,33 +15,45 @@ public class TapeEquilibrium {
 		 * second part.
 		 */
 
-		int p = 3;
 		int[] arr = { 6, 3, 4, 1, 5, 2, 3, 1 };
 
-		System.out.println("Difference is: " + findDiffFromPoint(arr, p));
+		System.out.println("The minimal difference point is: " 
+				+ findMinimalDiffPoint(arr));
 
 	}
 
-	private static int findDiffFromPoint(int[] arr, int p) {
+	private static int findMinimalDiffPoint(int[] arr) {
 
-		int sumBefP = 0;
-		int sumFromP = 0;
+		int minDiff = Integer.MAX_VALUE;
+		int minP = 0;
+		
+		int currentSum = 0;
+		int otherHalfSum = 0;
+		int currentDiff = 0;
 
-		for (int i = 0; i < p; i++) {
-			sumBefP += arr[i];
+		int arrSum = IntStream.of(arr).sum();
+		//System.out.println("Array Sum: "+ arrSum);
+		
+		for (int i = 0; i < arr.length-1; i++) {
+			currentSum += arr[i];
+			
+			otherHalfSum = arrSum - currentSum;
+			
+			currentDiff = Math.abs(currentSum - otherHalfSum);
+			
+			//System.out.println("currentSum: "+ currentSum 
+			//		+" otherSum: "+ otherHalfSum +" currentDiff: "+ currentDiff);
+			
+			if(currentDiff < minDiff) {
+				minDiff = currentDiff;
+				minP = i+1;
+			}
+			
 		}
+		
+		System.out.println("Minimal Difference is: "+ minDiff);
 
-		for (int j = p; j < arr.length; j++) {
-			sumFromP += arr[j];
-		}
-
-		int diff = sumBefP - sumFromP;
-
-		if (diff < 0) {
-			diff = -diff;
-		}
-
-		return diff;
+		return minP;
 	}
 
 }
