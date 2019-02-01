@@ -6,6 +6,13 @@ import java.util.Collections;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * Solution for Max Product Of Three problem
+ * 
+ * @author SN
+ *
+ */
+
 public class MaxProductOfThree {
 
 	public static void main(String[] args) {
