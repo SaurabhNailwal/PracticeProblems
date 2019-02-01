@@ -1,15 +1,16 @@
 package loc.solution;
 
+/**
+ * Solution for Frog Jump problem
+ * 
+ * @author SN
+ *
+ */
+
 public class FrogJump {
 
 	public static void main(String[] args) {
-		/*  A small frog wants to get to the other side of the road.
-		 *  The frog is currently located at position X and wants to
-		 *  get to a position greater than or equal to Y. The small 
-		 *  frog always jumps a fixed distance, D.
-		 *  Count the minimal number of jumps that the small frog 
-		 *  must perform to reach its target.
-		 */
+		
 		int xPosition = 10;
 		int yPosition = 85;
 		int d = 30;
