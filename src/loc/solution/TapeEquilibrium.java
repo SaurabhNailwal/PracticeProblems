@@ -2,19 +2,17 @@ package loc.solution;
 
 import java.util.stream.IntStream;
 
+/**
+ * Solution for Tape Equilibrium problem
+ * 
+ * @author SN
+ *
+ */
+
 public class TapeEquilibrium {
 
 	public static void main(String[] args) {
-		/* * 
-		 * A non-empty array A consisting of N integers is given, array A represents
-		 * numbers on a tape. Any integer P, such that 0 < P < N, splits this tape into
-		 * two non-empty parts: A[0], A[1], ..., A[P − 1] and A[P], A[P + 1], ..., A[N −
-		 * 1]. The difference between the two parts is the value of: |(A[0] + A[1] + ...
-		 * + A[P − 1]) − (A[P] + A[P + 1] + ... + A[N − 1])| In other words, it is the
-		 * absolute difference between the sum of the first part and the sum of the
-		 * second part.
-		 */
-
+		
 		int[] arr = { 6, 3, 4, 1, 5, 2, 3, 1 };
 
 		System.out.println("The minimal difference point is: " 
