@@ -3,13 +3,19 @@ package loc.solution;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Solution for Missing Positive Integer problem
+ * 
+ * @author SN
+ *
+ */
+
 public class MissingPositiveInteger {
 
 	public static void main(String[] args) {
 		/* *
-		 * Given an array A of N integers, return the smallest 
-		 * positive integer (greater than 0) that does not occur
-		 *  in A.
+		 * Find smallest positive integer greater than zero, 
+		 * not in given array
 		 * */
 		//int[] arr = {1, 3, 6, 4, 1, 2};
 		int[] arr = {1, 2, 6, 4, 5, 3};
