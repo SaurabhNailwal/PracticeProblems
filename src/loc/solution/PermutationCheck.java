@@ -3,15 +3,16 @@ package loc.solution;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Solution for Permutation Check problem
+ * 
+ * @author SN
+ *
+ */
+
 public class PermutationCheck {
 
 	public static void main(String[] args) {
-		/* *
-		 * A non-empty array A consisting of N integers is given.
-		 * A permutation is a sequence containing each element 
-		 * from 1 to N once, and only once.
-		 * The goal is to check whether array A is a permutation.
-		 * */
 		
 		int[] arr = { 3, 2 , 1, 4, 6};
 		
