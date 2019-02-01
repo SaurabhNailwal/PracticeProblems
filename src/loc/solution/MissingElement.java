@@ -7,14 +7,18 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Solution for Missing Element problem
+ * 
+ * @author SN
+ *
+ */
+
 public class MissingElement {
 
 	public static void main(String[] args) {
 
-		/*  An array A consisting of N different integers is given.
-		 *  The array contains integers in the range [1..(N + 1)],
-		 *  which means that exactly one element is missing.
-		 *  Find that missing element.*/
+		/*  Find the missing element in teh array from range 1 to N+1*/
 		
 		int[] A = {2,3,1,5};
 		
