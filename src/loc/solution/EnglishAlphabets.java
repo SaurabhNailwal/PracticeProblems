@@ -2,19 +2,16 @@ package loc.solution;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Solution for English Alphabets problem
+ * 
+ * @author SN
+ *
+ */
+
 public class EnglishAlphabets {
 
 	public static void main(String[] args) throws IOException {
-
-		/**
-		 * Finding the specified word in 2D Array
-		 * 
-		 * eg: Given array A A K A S K A K K
-		 * 
-		 * word: ASK
-		 * 
-		 * return count of ASK as 4 as ASK can be found 4 times in the array.
-		 */
 		Scanner in = new Scanner(System.in);
 		int output = 0;
 		int ip1_rows = 0;
