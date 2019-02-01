@@ -1,5 +1,12 @@
 package loc.solution;
 
+/**
+ * Solution for Longest Password problem
+ * 
+ * @author SN
+ *
+ */
+
 public class LongestPassword {
 
 	public static void main(String[] args) {
