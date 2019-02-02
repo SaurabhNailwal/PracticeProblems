@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * Soltuion for Genomic Range Query problem
+ * Solution for Genomic Range Query problem
  * 
  * @author SN
  *
